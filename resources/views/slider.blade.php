@@ -16,4 +16,4 @@
         </div>
     </div>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-@endsection
+@show

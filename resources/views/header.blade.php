@@ -111,7 +111,15 @@
                 </li>
             </ul>
         </header>
+
+        <main class="main">
+        </main>
+
+        <footer>
+
+        </footer>
+
     </div>
 
     <script src="js/jquery-3.2.1.min.js"></script>
-@endsection
+@show
