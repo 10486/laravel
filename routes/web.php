@@ -15,7 +15,7 @@ Route::get('/', function () {
 
     return view("welcome");
 });
-Route::get('/black_fiday',"APIController@GetAPI");
+Route::get('/black_friday',"APIController@GetAPI");
 
 Auth::routes();
 
