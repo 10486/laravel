@@ -14,6 +14,7 @@ class APIController extends Controller
     }catch{
       echo "все хуйня, давай по новой";
     }
+    return "";
   }
   public function Update(){
     try{
@@ -25,6 +26,7 @@ class APIController extends Controller
       Redis::set("running",true);
       $this->UpdateData();
     }
+    return "updating";
   }
   private function UpdateData(){
     //http://chelhack.deletestaging.com  ///goods ///error
