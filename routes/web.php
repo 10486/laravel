@@ -12,7 +12,6 @@
 */
 
 Route::get('/', function () {
-    echo opcache_get_status();
-    phpinfo();
-    return "";
+    
+    return view("welcome.blade");
 });
