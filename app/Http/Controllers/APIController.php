@@ -31,9 +31,10 @@ class APIController extends Controller
   private function UpdateData(){
     //http://chelhack.deletestaging.com  ///goods ///error
     $data = json_decode(file_get_contents("http://chelhack.deletestaging.com/goods"));
-    if($data['status']=='success'){
-      Redis::set('data',json_encode($data));
-    }
+    echo json_encode($data);
+    // if($data['status']=='success'){
+    //   Redis::set('data',json_encode($data));
+    // }
   }
   public function GetAPI(){
     Redis::set("something","some");
