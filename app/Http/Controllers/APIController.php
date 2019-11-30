@@ -7,7 +7,7 @@ use Redis;
 
 class APIController extends Controller
 {
-  public function Chek(){
+  public function Check(){
     try{
       $data = Redis::get('data');
       echo $data;
