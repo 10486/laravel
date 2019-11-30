@@ -19,4 +19,4 @@ mix.js('resources/js/app.js', 'public/js')
    .styles(['resources/sass/style.css'], 'public/css')
    .sass('resources/sass/style.sass', 'public/css')
    .sass('resources/sass/style.scss', 'public/css')
-   .sass('resources/sass/styles.scss', 'public/css')
+   .sass('resources/sass/styles.scss', 'public/css');
