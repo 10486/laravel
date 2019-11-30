@@ -8,6 +8,7 @@ class APIController extends Controller
 {
   public function GetAPI(){
     echo file_get_contents("http://chelhack.deletestaging.com/goods");
+    echo file_get_contents("http://chelhack.deletestaging.com/errors");
     return "";
   }
 }
