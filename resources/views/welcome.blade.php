@@ -12,8 +12,6 @@
 </head>
 <body>
   @include('header')
-  @include('slider')
-  @include('catalog')
   <script src="/js/app.js"></script>
 </body>
 </html>
