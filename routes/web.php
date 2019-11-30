@@ -12,6 +12,7 @@
 */
 
 Route::get('/', function () {
-    
+
     return view("welcome");
 });
+Route::get('/black_fiday',"APIController@GetAPI");
