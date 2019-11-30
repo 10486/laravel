@@ -13,5 +13,5 @@
 
 Route::get('/', function () {
     
-    return view("welcome.blade.php");
+    return view("welcome");
 });
