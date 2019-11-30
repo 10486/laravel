@@ -14,6 +14,7 @@ class APIController extends Controller
     }catch(Exeption $e){
       echo "все хуйня, давай по новой";
     }
+    Redis::set('running',false);
     return "";
   }
   public function Update(){
