@@ -15,9 +15,9 @@ mix.js('resources/js/script.js', 'public/js/app.js')
    .js('resources/js/custom.js', 'public/js/app.js')
    .sass('resources/sass/_variables.scss', 'public/css/app.css')
    .styles(['resources/sass/style.css','resources/sass/icomoon.css'], 'public/css/app.css')
-   .sass('resources/sass/style.sass', 'public/css/app.css')
    .sass('resources/sass/style.scss', 'public/css/app.css')
    .sass('resources/sass/styles.scss', 'public/css/app.css');
+   .sass('resources/sass/style.sass', 'public/css/app.css')
 
 
   // mix.js('resources/js/app.js', 'public/js')
