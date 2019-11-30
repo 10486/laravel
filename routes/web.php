@@ -16,3 +16,7 @@ Route::get('/', function () {
     return view("welcome");
 });
 Route::get('/black_fiday',"APIController@GetAPI");
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
