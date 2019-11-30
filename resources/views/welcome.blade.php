@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
     <title>Black Friday</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="/css/app.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 </head>
 <body>
   @include('header')
   @include('slider')
   @include('catalog')
-  <script src="js/app.js"></script>
+  <script src="/js/app.js"></script>
 </body>
