@@ -12,6 +12,7 @@
 </head>
 <body>
 @include('slider')
+{{"something"}}
   <script src="/js/app.js"></script>
 </body>
 </html>
