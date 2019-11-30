@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"/>
 </head>
 <body>
-  @include('head')
+  @include('header')
   <script src="/js/app.js"></script>
 </body>
 </html>
