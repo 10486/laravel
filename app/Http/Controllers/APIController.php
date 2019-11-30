@@ -7,6 +7,32 @@ use Redis;
 
 class APIController extends Controller
 {
+  public function Chek(){
+    try{
+      $data = Redis::get('data');
+      echo $data;
+    }catch{
+      echo "все хуйня, давай по новой";
+    }
+  }
+  public function Update(){
+    try{
+      if(!(bool)Redis::get("running")){
+        Redis::set("running",true);
+        $this->UpdateData();
+      }
+    }catch{
+      Redis::set("running",true);
+      $this->UpdateData();
+    }
+  }
+  private function UpdateData(){
+    //http://chelhack.deletestaging.com  ///goods ///error
+    $data = json_decode(file_get_contents("http://chelhack.deletestaging.com/goods"));
+    if($data['status']=='success'){
+      Redis::set('data',json_encode($data));
+    }
+  }
   public function GetAPI(){
     Redis::set("something","some");
     $a = Redis::get("something");
