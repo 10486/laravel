@@ -11,7 +11,7 @@ class APIController extends Controller
     try{
       $data = Redis::get('data');
       echo $data;
-    }catch{
+    }catch(Exeption $e){
       echo "все хуйня, давай по новой";
     }
     return "";
@@ -22,7 +22,7 @@ class APIController extends Controller
         Redis::set("running",true);
         $this->UpdateData();
       }
-    }catch{
+    }catch(Exception $e){
       Redis::set("running",true);
       $this->UpdateData();
     }
