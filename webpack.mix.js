@@ -13,11 +13,12 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/script.js', 'public/js/app.js')
    .js('resources/js/custom.js', 'public/js/app.js')
+   .js('resources/js/bootstrap.js', 'public/js/app.js')
    .sass('resources/sass/_variables.scss', 'public/css/app.css')
    .styles(['resources/sass/style.css','resources/sass/icomoon.css'], 'public/css/app.css')
-   .sass('resources/sass/style.scss', 'public/css/app.css')
-   .sass('resources/sass/catalog.scss', 'public/css/app.css')
-   .sass('resources/sass/style.sass', 'public/css/app.css');
+   .sass('resources/sass/style.scss', 'public/css/slider.css')
+   .sass('resources/sass/catalog.scss', 'public/css/catalog.css')
+   .sass('resources/sass/style.sass', 'public/css/header.css');
 
 
   // mix.js('resources/js/app.js', 'public/js')

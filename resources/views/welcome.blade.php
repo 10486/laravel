@@ -7,6 +7,9 @@
     <title>Black Friday</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="/css/app.css"/>
+    <link rel="stylesheet" href="/css/header.css"/>
+    <link rel="stylesheet" href="/css/catalog.css"/>
+    <link rel="stylesheet" href="/css/slider.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"/>
 </head>
 <body>
