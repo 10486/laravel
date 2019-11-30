@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 </head>
 <body>
-  @include('catalog')
+  @include('slider')
   <script src="/js/app.js"></script>
 </body>
 </html>
