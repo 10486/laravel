@@ -6,7 +6,7 @@
 $font-weight: 400
 $font-size: 14px
 $line-height: 1.4
-$font-family: "Varela Round" 
+$font-family: "Varela Round"
 $font-family2: 'Oswald'
 $font-family3: "PT Serif"
 $color: #fff
@@ -14,74 +14,74 @@ $color-blue: #1f4ba5
 $color-danger: #ff3f2b
 
 
-body 	
-	color: $color
-	font: $font-weight $font-size/$line-height $font-family, Nunito, sans-serif
-	background: #FFF
-	padding: 0
-	margin: 0
+body
+    color: $color
+    font: $font-weight $font-size/$line-height $font-family, Nunito, sans-serif
+    background: #FFF
+    padding: 0
+    margin: 0
 
 /* MAIN STYLES
 /* ================================================ */
 
 .header-main-wrapper
-	padding: 0
-	margin: 0 auto
-	max-width: 1920px
-	min-width: 320px
-	position: relative 
-	overflow: hidden
-	opacity: 1
-	min-height: 100% 
+    padding: 0
+    margin: 0 auto
+    max-width: 1920px
+    min-width: 320px
+    position: relative
+    overflow: hidden
+    opacity: 1
+    min-height: 100%
 
 
 img
-	display: block
-	max-width: 100%
+    display: block
+    max-width: 100%
 
-span 
-	display: inline-block
-	color: #868686
+span
+    display: inline-block
+    color: #868686
 
 /* text position */
 
 .header-text-left
-	text-align: left !important
+    text-align: left !important
 
 .header-text-center
-	text-align: center !important
+    text-align: center !important
 
 .header-text-right
-	text-align: right !important
+    text-align: right !important
 
 
 /* Icons
      ====================== */
-.header-ic 
-	position: relative
-	display: inline-block
-	vertical-align: middle
-	// background: $icons no-repeat
+.header-ic
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    // background: $icons no-repeat
 
 // @each $i in next, prev
-// 	.ic--#{$i}
-// 		+s(ic--#{$i})
+//     .ic--#{$i}
+//         +s(ic--#{$i})
 
 /* Buttons
      ====================== */
 
-.header-btn 
-	display: inline-flex
-	align-items: center
-	justify-content: center
-	color: #868686
-	height: 30px
-	background-color: #F3E842
-	padding: 0 25px
-	border-radius: 20px
-	font-family: $font-family, Nunito, sans-serif
-	font-size: 12px
-	font-weight: 400
+.header-btn
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    color: #868686
+    height: 30px
+    background-color: #F3E842
+    padding: 0 25px
+    border-radius: 20px
+    font-family: $font-family, Nunito, sans-serif
+    font-size: 12px
+    font-weight: 400
 
 
 
@@ -89,299 +89,297 @@ span
 /* Header
      ====================== */
 
-.header-header 
-	height: 150px
-	background-color: #000
-	display: flex
-	align-items: center
-	justify-content: space-between
-	padding: 0 30px
-	border-bottom: 1px solid #ececec
-	border-radius: 0px 0px 20px 20px
+.header-header
+    height: 150px
+    background-color: #000
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 30px
+    border-bottom: 1px solid #ececec
+    border-radius: 0px 0px 20px 20px
 
-.header-logo 
-	margin-right: 38px
-	padding-bottom: 7px
+.header-logo
+    margin-right: 38px
+    padding-bottom: 7px
 .main-menu
-	list-style: none
-	margin-right: 70px
-	display: flex
-				
-	&__link 
-		line-height: 80px
-		color: $color
-		font-size: 14px
-		display: block
-		padding: 0 21px
-		[class*="icon"]
-			margin-left: 3px
-			font-size: 8px
-			color: #000
+    list-style: none
+    margin-right: 70px
+    display: flex
+
+    &__link
+        line-height: 80px
+        color: $color
+        font-size: 14px
+        display: block
+        padding: 0 21px
+        [class*="icon"]
+            margin-left: 3px
+            font-size: 8px
+            color: #000
 
 
 .header-dropdown
-	position: relative
-	&:hover
-		.dropdown-content 
-			opacity: 1
-			margin-top: 0
-			left: -10px
-			visibility: visible
-	&--right 
-		&:hover 
-			.dropdown-content 
-				left: auto
-				right: -10px
+    position: relative
+    &:hover
+        .dropdown-content
+            opacity: 1
+            margin-top: 0
+            left: -10px
+            visibility: visible
+    &--right
+        &:hover
+            .dropdown-content
+                left: auto
+                right: -10px
 
-		.dropdown-content 
-			&:before 
-				right: 30px
-				z-index: 1
-			&:after 
-				right: 29px
-	&--white 
-		.dropdown-content
-			background: #fff
-			border: 1px solid #ececec
-			padding: 0
-			&:before 
-				border-bottom-color: #fff
-			&:after 
-				content: ''
-				display: block
-				position: absolute
-				bottom: 100%
-				+arr(16, 9, #ececec, t)
+        .dropdown-content
+            &:before
+                right: 30px
+                z-index: 1
+            &:after
+                right: 29px
+    &--white
+        .dropdown-content
+            background: #fff
+            border: 1px solid #ececec
+            padding: 0
+            &:before
+                border-bottom-color: #fff
+            &:after
+                content: ''
+                display: block
+                position: absolute
+                bottom: 100%
+                +arr(16, 9, #ececec, t)
 
 .header-dropdown-content
-	position: absolute
-	background: $color
-	padding: 30px
-	width: 240px
-	top: 100%
-	z-index: 99
-	left: -10000px
-	visibility: hidden
-	opacity: 0
-	margin-top: 30px
-	transition: opacity 0.3s, margin-top 0.4s
-	&:before 
-		content: ''
-		display: block
-		position: absolute
-		bottom: 100%
-		+arr(14, 7, $color, t)
+    position: absolute
+    background: $color
+    padding: 30px
+    width: 240px
+    top: 100%
+    z-index: 99
+    left: -10000px
+    visibility: hidden
+    opacity: 0
+    margin-top: 30px
+    transition: opacity 0.3s, margin-top 0.4s
+    &:before
+        content: ''
+        display: block
+        position: absolute
+        bottom: 100%
+        +arr(14, 7, $color, t)
 
 
 
-.header-dropdown-menu 
-	list-style: none
-	&__item 
-		margin-bottom: 8px
-		&:last-child 
-			margin-bottom: 0
-	&__link 
-		font-size: 12px
-		line-height: 16px
-		color: #bcbcbc
-		&:hover 
-			color: #fff
+.header-dropdown-menu
+    list-style: none
+    &__item
+        margin-bottom: 8px
+        &:last-child
+            margin-bottom: 0
+    &__link
+        font-size: 12px
+        line-height: 16px
+        color: #bcbcbc
+        &:hover
+            color: #fff
 
-.header-search 
-	flex: 1
-	position: relative
-	margin-right: 48px
-	&__input 
-		width: 100%
-		height: 30px
-		background-color: #323232
-		padding: 0 40px 0 20px
-		color: $color
-		font-family: "PT Serif", sans-serif
-		font-size: 20px
-		border: none
-		border-radius: 20px
-		color: #868686
-		+placeholder
-			font-style: italic
-			color: #868686
+.header-search
+    flex: 1
+    position: relative
+    margin-right: 48px
+    &__input
+        width: 100%
+        height: 30px
+        background-color: #323232
+        padding: 0 40px 0 20px
+        color: $color
+        font-family: "PT Serif", sans-serif
+        font-size: 20px
+        border: none
+        border-radius: 20px
+        color: #868686
+        +placeholder
+            font-style: italic
+            color: #868686
 
-	&__button 
-		position: absolute
-		top: 5px 
-		right: 3px
-		font-family: 'icomoon' !important
-		background-color: transparent
-		color: #868686
-		border: none
-		font-size: 18px
+    &__button
+        position: absolute
+        top: 5px
+        right: 3px
+        font-family: 'icomoon' !important
+        background-color: transparent
+        color: #868686
+        border: none
+        font-size: 18px
 
 
 
 .header-profile-menu
-	list-style: none
-	display: flex
-	margin-right: -17px
+    list-style: none
+    display: flex
+    margin-right: -17px
 
-	&__link 
-		display: block
-		line-height: 80px
-		padding: 0 17px
-		[class*="icon"]
-			font-size: 40px
-			color: #868686
-			vertical-align: middle
-	.dropdown-content
-		width: auto
+    &__link
+        display: block
+        line-height: 80px
+        padding: 0 17px
+        [class*="icon"]
+            font-size: 40px
+            color: #868686
+            vertical-align: middle
+    .dropdown-content
+        width: auto
 
 .header-basket
-	line-height: $line-height
-	position: relative
-	.badge 
-		color: #868686
-		position: absolute
-		top: -8px
-		right: -9px
+    line-height: $line-height
+    position: relative
+    .badge
+        color: #868686
+        position: absolute
+        top: -8px
+        right: -9px
 
 
 .header-b-price
-	vertical-align: middle
-	margin-left: 13px
-	color: #868686
-	font-family: $font-family2
-	font-size: 12px
-	font-weight: 700
-	letter-spacing: 1.2px
+    vertical-align: middle
+    margin-left: 13px
+    color: #868686
+    font-family: $font-family2
+    font-size: 12px
+    font-weight: 700
+    letter-spacing: 1.2px
 
-.header-badge 
-	background-color: #F3E842
-	min-width: 16px
-	height: 16px
-	padding: 0 4px
-	border-radius: 50%
-	display: inline-block
-	vertical-align: middle
-	text-align: center
-	line-height: 17px
-	color: #fff
-	font-size: 9px
+.header-badge
+    background-color: #F3E842
+    min-width: 16px
+    height: 16px
+    padding: 0 4px
+    border-radius: 50%
+    display: inline-block
+    vertical-align: middle
+    text-align: center
+    line-height: 17px
+    color: #fff
+    font-size: 9px
 
 
-.header-user-menu 
-	width: 180px
-	list-style: none
-	background-color: #000
-	&__item 
-		border-bottom: 1px solid #ececec
-		color: #868686
-		&:last-child 
-			border-bottom: none
-	&__link 
-		display: flex
-		align-items: center
-		color: #868686
-		font-size: 12px
-		font-weight: 400
-		line-height: 40px
-		padding: 0 20px
-		[class*="icon"]
-			width: 18px
-			color: #868686
-			text-align: center
-			color: #ccc
-			font-size: 16px
-			margin-right: 15px
-		.badge 
-			margin-left: auto
-			color: #868686
+.header-user-menu
+    width: 180px
+    list-style: none
+    background-color: #000
+    &__item
+        border-bottom: 1px solid #ececec
+        color: #868686
+        &:last-child
+            border-bottom: none
+    &__link
+        display: flex
+        align-items: center
+        color: #868686
+        font-size: 12px
+        font-weight: 400
+        line-height: 40px
+        padding: 0 20px
+        [class*="icon"]
+            width: 18px
+            color: #868686
+            text-align: center
+            color: #ccc
+            font-size: 16px
+            margin-right: 15px
+        .badge
+            margin-left: auto
+            color: #868686
 
 .header-cart
-	width: 300px
-	background-color: #000
-	&-list 
-		list-style: none
-		background-color: #000
-		&__item 
-			display: flex
-			align-items: center
-			border-bottom: 1px solid #ececec
-			padding: 10px
-		&__img 
-			width: 60px
-			margin-right: 20px
-			flex: none
-			text-align: center
-			img 
-				display: inline-block
-				max-width: 100%
-		&__info 
-			flex: 1
-			.product__title 
-				margin-bottom: 10px
-				color: #868686
-		&__details 
-			display: flex
-			align-items: center
-			justify-content: space-between
-			.price
-				margin-right: 10px
-		&__delete 
-			padding: 0 10px 0 0
-			margin-left: 20px
-			flex: none
-			color: #b6b6b6
-			font-size: 12px
-			a
-				color: inherit
-				&:hover 
-					color: $color
-	&-footer 
-		display: flex
-		align-items: center
-		padding: 20px 10px
-		.total 
-			width: 60px
-			flex: none
-			margin-right: 20px
-			text-align: right
-		.price 
-			margin-right: 28px
+    width: 300px
+    background-color: #000
+    &-list
+        list-style: none
+        background-color: #000
+        &__item
+            display: flex
+            align-items: center
+            border-bottom: 1px solid #ececec
+            padding: 10px
+        &__img
+            width: 60px
+            margin-right: 20px
+            flex: none
+            text-align: center
+            img
+                display: inline-block
+                max-width: 100%
+        &__info
+            flex: 1
+            .product__title
+                margin-bottom: 10px
+                color: #868686
+        &__details
+            display: flex
+            align-items: center
+            justify-content: space-between
+            .price
+                margin-right: 10px
+        &__delete
+            padding: 0 10px 0 0
+            margin-left: 20px
+            flex: none
+            color: #b6b6b6
+            font-size: 12px
+            a
+                color: inherit
+                &:hover
+                    color: $color
+    &-footer
+        display: flex
+        align-items: center
+        padding: 20px 10px
+        .total
+            width: 60px
+            flex: none
+            margin-right: 20px
+            text-align: right
+        .price
+            margin-right: 28px
 
-.header-price 
-	color: #868686
-	font-family: $font-family2, sans-serif
-	font-size: 12px
-	font-weight: 700
-	letter-spacing: 1.2px
-	&--danger 
-		color: $color-danger
+.header-price
+    color: #868686
+    font-family: $font-family2, sans-serif
+    font-size: 12px
+    font-weight: 700
+    letter-spacing: 1.2px
+    &--danger
+        color: $color-danger
 
-.header-total	
-	color: #b8b8b8
-	font-family: $font-family3, sans-serif
-	font-size: 12px
-	font-style: italic
-	line-height: 18px
+.header-total
+    color: #b8b8b8
+    font-family: $font-family3, sans-serif
+    font-size: 12px
+    font-style: italic
+    line-height: 18px
 
 
 /* Content
      ====================== */
 
-.header-product 
-	&__title 
-		color: $color
-		font-size: 12px
-		font-weight: 400
-		line-height: 16px
-		a 
-			color: inherit
-			&:hover 
-				text-decoration: underline
+.header-product
+    &__title
+        color: $color
+        font-size: 12px
+        font-weight: 400
+        line-height: 16px
+        a
+            color: inherit
+            &:hover
+                text-decoration: underline
 
-	&__details 
-		color: #b8b8b8
-		font-family: $font-family3, sans-serif
-		font-size: 12px
-		font-style: italic
-
-
+    &__details
+        color: #b8b8b8
+        font-family: $font-family3, sans-serif
+        font-size: 12px
+        font-style: italic
