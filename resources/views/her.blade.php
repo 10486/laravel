@@ -5,7 +5,10 @@
         $.ajax({
             type: 'GET',
             url: '/get_items',
-            data: '255&666&228&322&1488&420&69'
+            data: '255&666&228&322&1488&420&69',
+            success:function (data) {
+              console.log(data);
+            }
         })
     });
 </script>
