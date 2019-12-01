@@ -16,7 +16,7 @@ class ItemsController extends Controller
         $data = json_decode($data);
         $resp = [];
         for ($i=0; $i < 3; $i++) {
-          $resp = $data[12 + $page*3+i];
+          $resp = $data[12 + $page*3+$i];
         }
         return json_encode($resp);
     }
