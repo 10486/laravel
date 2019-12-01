@@ -16,6 +16,46 @@ class APIController extends Controller
     Redis::set('running',false);
     return "";
   }
+
+
+  public function Laptops(){
+    try{
+      $data = json_decode(Redis::get('data'));
+    }catch(Exception $e){
+      $data = false;
+    }
+    if(!$data){
+      return view('welcome',['success' => false,'items'=>[]]);
+    }
+    $tmp = []
+    foreach ($data->data as $item) {
+      if ($item->category == 'Laptops') {
+        $tmp.append($item);
+      }
+    }
+    return view('welcome',['success'=>true,'items'=>$tmp]);
+
+  }
+
+
+  public function Smartphones(){
+    try{
+      $data = json_decode(Redis::get('data'));
+    }catch(Exception $e){
+      $data = false;
+    }
+    if(!$data){
+      return view('welcome',['success' => false,'items'=>[]]);
+    }
+    $tmp = []
+    foreach ($data->data as $item) {
+      if ($item->category == 'Smartphones') {
+        $tmp.append($item);
+      }
+    }
+    return view('welcome',['success'=>true,'items'=>$tmp]);
+
+  }
   public function Update(){
     $data = false;
     try {
@@ -43,8 +83,9 @@ class APIController extends Controller
       return view('welcome',['success' => false,'items'=>[]]);
     }
     return view('welcome',['success'=>true,'items'=>$data->data]);
-
   }
+
+
   private function UpdateData(){
     //http://chelhack.deletestaging.com  ///goods ///error
     try{
