@@ -27,6 +27,7 @@ class APIController extends Controller
       $data = json_decode(Redis::get('data'));
     }catch(Exeption $e){
       $data = false;
+      echo $e;
     }
     if(!$data){
       return view('welcome',['success' => false,'items'=>[]]);
