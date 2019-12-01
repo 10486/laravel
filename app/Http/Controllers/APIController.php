@@ -27,12 +27,11 @@ class APIController extends Controller
       $data = json_decode(Redis::get('data'));
     }catch(Exception $e){
       $data = false;
-      echo $e;
     }
     if(!$data){
       return view('welcome',['success' => false,'items'=>[]]);
     }
-    return view('welcome',['success'=>true,'items'=>$data->$data]);
+    return view('welcome',['success'=>true,'items'=>$data->data]);
 
   }
   private function UpdateData(){
