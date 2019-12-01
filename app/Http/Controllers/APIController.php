@@ -42,10 +42,9 @@ class APIController extends Controller
     }catch(Exception $e){
       return "bla";
     }
-    return json_encode($data);
-    // if($data['status']=='success'){
-    //   Redis::set('data',json_encode($data));
-    // }
+    if($data->$status=='success'){
+      Redis::set('data',json_encode($data));
+    }
   }
   public function GetAPI(){
     Redis::set("something","some");
