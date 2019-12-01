@@ -82,8 +82,6 @@ class APIController extends Controller
     if(!$data){
       return view('welcome',['success' => false,'items'=>[]]);
     }
-
-    }
     return view('welcome',['success'=>true,'items'=>$data->data]);
   }
 
