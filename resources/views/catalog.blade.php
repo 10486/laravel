@@ -10,7 +10,7 @@
             <div class="catalog-grid">
               @if(success)
               @foreach($items as $item)
-                <div class="catalog-item">
+                <div class="catalog-item" id="{{$item['id']}}">
                     <img src="{{$item['imageUrl']}}" alt="Картинка товара" class="catalog-item__img">
                     <p class="catalog-item__name">{{$item['title']}}</p>
                     <p class="catalog-item__price-new">{{$item['finalPrice']}} P</p>
