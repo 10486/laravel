@@ -62,7 +62,7 @@ $(document).ready(function() {
       $('.article-last').addClass('active');
     }
     if (document.location.pathname == '/laptops') {
-      $('article-laptops').addClass('active');
+      $('.article-laptops').addClass('active');
     }
 
 //     $.ajax({
