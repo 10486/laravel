@@ -18,18 +18,8 @@ class APIController extends Controller
     return "";
   }
   public function Update(){
-    try{
-      if(!(bool)Redis::get("running")){
-        Redis::set("running",true);
-        echo $this->UpdateData();
-      }else{
-        echo "ninada";
-      }
-    }catch(Exception $e){
-      Redis::set("running",true);
-      echo $this->UpdateData();
-    }
-    return "updating";
+    echo $this->UpdateData();
+    return "";
   }
   public function main()
   {
@@ -41,7 +31,7 @@ class APIController extends Controller
     if(!$data){
       return view('welcome',['success' => false]);
     }
-    return view('welcome',['success'=>true,'items'=>$data]);
+    return view('welcome',['success'=>true,'items'=>$data->$data]);
 
   }
   private function UpdateData(){
