@@ -2,8 +2,8 @@
     <div class="content">
         <div class="catalog-menu">
             <div class="wrapper">
-                <div class="catalog-article">laptops</div>
-                <div class="catalog-article article-last">smartphones</div>
+                <div class="catalog-article"><a href="#">laptops</a></div>
+                <div class="catalog-article article-last"><a href="#">smartphones</a></div>
             </div>
         </div>
         <div class="wrapper">
