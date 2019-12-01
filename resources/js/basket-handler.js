@@ -35,7 +35,7 @@ function item_item(item) {
 function load_basket(data) {
   let basket = $('cart-list');
   obj = data;
-  for key in obj {
+  for (key in obj) {
     temp = $('ul.cart-list').html() + '<li id="' + key + '" class="cart-list__item"><div class="cart-list__img"><a href="#"><img src=\"' + obj[key]['ImageSrc'] + '\" alt=""></a></div><div class="cart-list__info"><h6 class="product__title"><a href="#">' + obj[key]['title'] + '</a></h6><div class="cart-list__details"><span class="price">' + obj[key]['final-price'] + '</span></div></div><div class="cart-list__delete"><div class="js-remove-cart"><span class="icon-close"><span class="path1"></span><span class="path2"></span></span></div></div></li>';
     $('ul.cart-list').html(temp);
   }
