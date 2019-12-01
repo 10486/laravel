@@ -30,7 +30,7 @@ class APIController extends Controller
     $tmp = [];
     foreach ($data->data as $item) {
       if ($item->category == 'Laptops') {
-        $tmp->append($item);
+        $tmp[] = $item;
       }
     }
     return view('welcome',['success'=>true,'items'=>$tmp]);
@@ -50,7 +50,7 @@ class APIController extends Controller
     $tmp = [];
     foreach ($data->data as $item) {
       if ($item->category == 'Smartphones') {
-        $tmp->append($item);
+        $tmp[] = $item;
       }
     }
     return view('welcome',['success'=>true,'items'=>$tmp]);
