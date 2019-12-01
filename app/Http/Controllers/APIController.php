@@ -10,7 +10,6 @@ class APIController extends Controller
   public function Check(){
     try{
       $data = Redis::get('data');
-      echo $data;
     }catch(Exception $e){
       echo "все хуйня, давай по новой";
     }
@@ -18,6 +17,18 @@ class APIController extends Controller
     return "";
   }
   public function Update(){
+    $data = false;
+    try {
+      $data = Redis::get('running');
+    } catch (Exception $e) {
+      Redis::set('running',true);
+      $this->UpdateData();
+      return "";
+    }if(!$data){
+      $this->UpdateData();
+      return "";
+    }return "";
+
     echo $this->UpdateData();
     return "";
   }
@@ -37,10 +48,11 @@ class APIController extends Controller
   private function UpdateData(){
     //http://chelhack.deletestaging.com  ///goods ///error
     try{
-      $data = json_decode(file_get_contents("http://chelhack.deletestaging.com/goods"));
+      $data = file_get_contents("http://chelhack.deletestaging.com/goods");
     }catch(Exception $e){
       return "bla";
     }
+    $data = json_decode($data);
     if($data->status=='Success'){
       Redis::set('data',json_encode($data));
     }

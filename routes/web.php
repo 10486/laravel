@@ -12,7 +12,7 @@
 */
 
 Route::get('/', "APIController@main");
-Route::get('/black_friday',"APIController@GetAPI");
+Route::get('/black_friday',"APIController@main");
 Route::get('/check',"APIController@Check");
 Route::get('/update',"APIController@Update");
 
