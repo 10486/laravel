@@ -31,6 +31,19 @@ class APIController extends Controller
     }
     return "updating";
   }
+  public function main()
+  {
+    try{
+      $data = json_decode(Redis::get('data'));
+    }catch(Exeption $e){
+      $data = false;
+    }
+    if(!$data){
+      return view('welcome',['success' => false]);
+    }
+    return view('welcome',['success'=>true,'items'=>$data]);
+
+  }
   private function UpdateData(){
     //http://chelhack.deletestaging.com  ///goods ///error
     $data = json_decode(file_get_contents("http://chelhack.deletestaging.com/goods"));
@@ -45,5 +58,5 @@ class APIController extends Controller
     echo $a;
     return"";
   }
-  
+
 }
