@@ -54,8 +54,17 @@ function recount() {
     $(".b-price").html(total + 'rub');
 };
 
+
 $(document).ready(function() {
     addel();
+
+    if (document.location.pathname == "/smartphones") {
+      $('.article-last').addClass('active');
+    }
+    if (document.location.pathname == '/laptops') {
+      $('article-laptops').addClass('active');
+    }
+
 //     $.ajax({
 //         type: 'GET',
 //         url: '/get_items',

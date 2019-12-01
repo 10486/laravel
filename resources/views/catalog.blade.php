@@ -2,7 +2,7 @@
     <div class="content">
         <div class="catalog-menu">
             <div class="wrapper">
-                <div class="catalog-article"><a href="/laptops">laptops</a></div>
+                <div class="catalog-article article-laptops"><a href="/laptops">laptops</a></div>
                 <div class="catalog-article article-last"><a href="/smartphones">smartphones</a></div>
             </div>
         </div>
