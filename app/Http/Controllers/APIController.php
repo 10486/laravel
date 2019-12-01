@@ -29,7 +29,7 @@ class APIController extends Controller
       $data = false;
     }
     if(!$data){
-      return view('welcome',['success' => false]);
+      return view('welcome',['success' => false,'items'=>[]]);
     }
     return view('welcome',['success'=>true,'items'=>$data->$data]);
 
