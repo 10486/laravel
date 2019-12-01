@@ -17,6 +17,8 @@ Route::get('/check',"APIController@Check");
 Route::get('/update',"APIController@Update");
 Route::get('/laptops',"APIController@Laptops");
 Route::get('/smartphones',"APIController@Smartphones");
+Route::get('/getpage',"ItemsController@Page");
+Route::get("/get_items","ItemsController@GetItems")
 
 Auth::routes();
 
