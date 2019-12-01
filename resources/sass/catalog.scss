@@ -34,6 +34,7 @@ body {
 .catalog-grid {
     margin-top: 80px;
     display: flex;
+    display: -ms-flexbox;
     flex-wrap: wrap;
     justify-content: space-evenly;
     .catalog-item {
