@@ -45,4 +45,5 @@ class APIController extends Controller
     echo $a;
     return"";
   }
+  
 }
