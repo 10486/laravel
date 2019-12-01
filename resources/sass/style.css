@@ -112,7 +112,7 @@ section {
 body {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Tahoma, sans-serif;
+    font-family: "Nunito", Tahoma, sans-serif;
     line-height: 1;
     background-color: #ffffff;
     height: 100%;
@@ -292,7 +292,7 @@ span {
     background-color: #F3E842;
     padding: 0 25px;
     border-radius: 20px;
-    font-family: "Varela Round", Arial, sans-serif;
+    font-family: "Nunito", Arial, sans-serif;
     font-size: 12px;
     font-weight: 400;
 }
@@ -444,7 +444,7 @@ span {
     background-color: #323232;
     padding: 0 40px 0 20px;
     color: #fff;
-    font-family: "PT Serif", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 20px;
     border: none;
     border-radius: 20px;
@@ -525,7 +525,7 @@ span {
     vertical-align: middle;
     margin-left: 13px;
     color: #868686;
-    font-family: "Oswald";
+    font-family: "Nunito";
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 1.2px;
@@ -667,7 +667,7 @@ span {
 
 .price {
     color: #868686;
-    font-family: "Oswald", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 1.2px;
@@ -679,7 +679,7 @@ span {
 
 .total {
     color: #b8b8b8;
-    font-family: "PT Serif", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 12px;
     font-style: italic;
     line-height: 18px;
