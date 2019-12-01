@@ -53,9 +53,9 @@ function recount() {
     $('.badge').html(badge);
     $(".b-price").html(total + 'rub');
 };
-// 
-// $(document).ready(function() {
-//     addel();
+
+$(document).ready(function() {
+    addel();
 //     $.ajax({
 //         type: 'GET',
 //         url: '/get_items',
@@ -64,7 +64,7 @@ function recount() {
 //             load_basket(data);
 //         }
 //     })
-// });
+});
 
 $(window).on("unload", function() {
     $.cookie('basket_items', JSON.stringify(basket_items));
