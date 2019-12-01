@@ -83,7 +83,7 @@ class APIController extends Controller
       return view('welcome',['success' => false,'items'=>[]]);
     }
     $tmp=[];
-    for ($i=0; $i < 9; $i++) {
+    for ($i=0; $i < 12; $i++) {
       try {
         $tmp[] = $data->data[$i];
       } catch (\Exception $e) {
