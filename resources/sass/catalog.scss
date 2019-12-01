@@ -23,10 +23,13 @@ body {
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        color: #ffffff;
         width: calc(calc(100% / 2) - calc(3px * 1));
         font-size: 80px;
         border-right: 3px solid #ffffff;
+        a {
+
+          color: #ffffff;
+        }
     }
     .article-last {
         border-right: none;
