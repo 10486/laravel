@@ -15,7 +15,6 @@
 <body>
   @include('header')
   @include('slider')
-  @include('her')
   @include('catalog',['items' => $items,'success'=>$success])
   <script src="/js/app.js"></script>
 </body>
