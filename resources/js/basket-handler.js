@@ -53,18 +53,18 @@ function recount() {
     $('.badge').html(badge);
     $(".b-price").html(total + 'rub');
 };
-
-$(document).ready(function() {
-    addel();
-    $.ajax({
-        type: 'GET',
-        url: '/get_items',
-        data: basket_items,
-        success:function (data) {
-            load_basket(data);
-        }
-    })
-});
+// 
+// $(document).ready(function() {
+//     addel();
+//     $.ajax({
+//         type: 'GET',
+//         url: '/get_items',
+//         data: basket_items,
+//         success:function (data) {
+//             load_basket(data);
+//         }
+//     })
+// });
 
 $(window).on("unload", function() {
     $.cookie('basket_items', JSON.stringify(basket_items));
