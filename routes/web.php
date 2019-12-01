@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-
-    return view("welcome");
-});
+Route::get('/', "HomeController@main");
 Route::get('/black_friday',"APIController@GetAPI");
 Route::get('/check',"APIController@Check");
 Route::get('/update',"APIController@Update");
