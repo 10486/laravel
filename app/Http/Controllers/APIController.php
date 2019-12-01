@@ -11,7 +11,7 @@ class APIController extends Controller
     try{
       $data = Redis::get('data');
     }catch(Exception $e){
-      echo "все хуйня, давай по новой";
+      echo "все плохо, давай по новой";
     }
     Redis::set('running',false);
     return "";
@@ -82,7 +82,16 @@ class APIController extends Controller
     if(!$data){
       return view('welcome',['success' => false,'items'=>[]]);
     }
-    return view('welcome',['success'=>true,'items'=>$data->data]);
+    $tmp=[];
+    for ($i=0; $i < 12; $i++) {
+      try {
+        $tmp[] = $data->data[$i];
+      } catch (\Exception $e) {
+        break;
+      }
+
+    }
+    return view('welcome',['success'=>true,'items'=>$tmp]);
   }
 
 
