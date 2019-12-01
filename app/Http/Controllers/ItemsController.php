@@ -7,12 +7,17 @@ use Redis;
 class ItemsController extends Controller
 {
     public function GetItems(Request $request){
-      dump($request->input());
-        // try {
-        //     $data = Redis::get('data');
-        // } catch (Exception $e) {
-        //
-        // }
-
+        $page = $request->input('page');
+        try {
+            $data = Redis::get('data');
+        } catch (Exception $e) {
+          return "error";
+        }
+        $data = json_decode($data);
+        $resp = [];
+        for ($i=0; $i < 3; $i++) {
+          $resp = $data[$page*3+i];
+        }
+        return json_encode($resp);
     }
 }
